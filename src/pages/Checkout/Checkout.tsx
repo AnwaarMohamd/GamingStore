@@ -31,7 +31,7 @@ const Checkout: React.FC = () => {
     return (
         <Layout>
             <div className="container mx-auto py-8">
-                <h1 className="text-3xl font-bold mb-6">Checkout</h1>
+                <h1 className="text-3xl font-bold mb-6 bg-purple-400 bg-clip-text text-transparent">Checkout</h1>
                 <div className="bg-secondary p-6 rounded-lg flex flex-col gap-4">
                     {items.map((item) => (
                         <div key={item.id} className="flex justify-between">

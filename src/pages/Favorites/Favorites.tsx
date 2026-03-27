@@ -16,7 +16,7 @@ const Favorites: React.FC = () => {
     return (
         <Layout>
             <section className="container mx-auto py-8">
-                <h1 className="text-3xl font-bold mb-6">
+                <h1 className="text-3xl font-bold mb-6 text-purple-400">
                     <FaHeart className='inline-block' /> Favorites
                 </h1>
 

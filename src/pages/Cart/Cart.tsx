@@ -15,7 +15,7 @@ const Cart: React.FC = () => {
         <><Navbar />
 
             <div className="container mx-auto py-8">
-                <h1 className="text-3xl font-bold mb-6">
+                <h1 className="text-3xl font-bold mb-6 text-purple-400">
                     <FaShoppingCart className='inline-block' /> Cart
                 </h1>
                 {cartItems.length === 0 && <p>Your cart is empty</p>}

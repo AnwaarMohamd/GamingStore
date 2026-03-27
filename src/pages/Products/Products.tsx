@@ -40,7 +40,7 @@ const Products: React.FC = () => {
     return (
         <Layout>
             <section className="container mx-auto py-8">
-                <h1 className="text-3xl font-bold mb-6">
+                <h1 className="text-3xl font-bold mb-6 bg-purple-400 bg-clip-text text-transparent">
                     {categoryParam
                         ? `${categoryParam} Products`
                         : 'All Gaming Products'}
