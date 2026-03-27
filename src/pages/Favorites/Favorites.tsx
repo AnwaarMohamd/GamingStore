@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { RootState } from '@/app/store/store';
 import Layout from '@/components/Layout/Layout';
 import ProductCard from '@/components/ProductCard/ProductCard';
+import { FaHeart } from 'react-icons/fa';
 
 const Favorites: React.FC = () => {
     const favorites = useSelector((state: RootState) => state.favorites.items);
@@ -16,7 +17,7 @@ const Favorites: React.FC = () => {
         <Layout>
             <section className="container mx-auto py-8">
                 <h1 className="text-3xl font-bold mb-6">
-                    My Favorites
+                    <FaHeart className='inline-block' /> Favorites
                 </h1>
 
                 {favoriteProducts.length === 0 ? (

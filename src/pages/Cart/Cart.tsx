@@ -5,6 +5,7 @@ import { removeFromCart } from '@/features/cart/cartSlice';
 import { formatPrice } from '@/utils/formatPrice';
 import Navbar from '@/components/Navbar/Navbar';
 import { useNavigate } from 'react-router-dom';
+import { FaShoppingCart } from 'react-icons/fa';
 
 const Cart: React.FC = () => {
     const cartItems = useSelector((state: RootState) => state.cart.items);
@@ -12,7 +13,11 @@ const Cart: React.FC = () => {
     const navigate = useNavigate();
     return (
         <><Navbar />
-            <div className="p-4">
+
+            <div className="container mx-auto py-8">
+                <h1 className="text-3xl font-bold mb-6">
+                    <FaShoppingCart className='inline-block' /> Cart
+                </h1>
                 {cartItems.length === 0 && <p>Your cart is empty</p>}
 
                 {cartItems.map(item => (

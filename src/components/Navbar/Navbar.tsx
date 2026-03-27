@@ -31,6 +31,13 @@ const Navbar: React.FC = () => {
                 <div className="flex items-center gap-6 text-sm font-medium">
 
                     <Link
+                        to="/"
+                        className="hover:text-accent transition-all duration-200"
+                    >
+                        Home
+                    </Link>
+
+                    <Link
                         to="/products"
                         className="hover:text-accent transition-all duration-200"
                     >
@@ -75,17 +82,12 @@ const Navbar: React.FC = () => {
                         <>
                             <Link
                                 to="/login"
-                                className="hover:text-accent transition"
+                                className="bg-accent px-4 py-2 rounded-lg hover:opacity-90 transition"
                             >
                                 Login
                             </Link>
 
-                            <Link
-                                to="/register"
-                                className="bg-accent px-4 py-2 rounded-lg hover:opacity-90 transition"
-                            >
-                                Register
-                            </Link>
+                            
                         </>
                     )}
                 </div>

@@ -32,7 +32,7 @@ const Login: React.FC = () => {
     return (
         <Layout>
             <div className="container mx-auto py-20 max-w-md">
-                <h1 className="text-3xl font-bold mb-6">Login</h1>
+                <h1 className="text-3xl font-bold mb-6 text-center">Login</h1>
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                     <input
                         type="email"
@@ -59,7 +59,7 @@ const Login: React.FC = () => {
                         {isLoading ? 'Logging in...' : 'Login'}
                     </button>
                 </form>
-                <p className="mt-4 text-gray-400">
+                <p className="mt-6 text-gray-400 text-center ">
                     Don't have an account? <Link to="/register" className="text-accent underline">Register</Link>
                 </p>
             </div>

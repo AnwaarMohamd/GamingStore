@@ -23,7 +23,7 @@ const Register: React.FC = () => {
     return (
         <Layout>
             <div className="container mx-auto py-20 max-w-md">
-                <h1 className="text-3xl font-bold mb-6">Register</h1>
+                <h1 className="text-3xl font-bold mb-6 text-center">Register</h1>
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                     <input
                         type="text"
@@ -51,12 +51,12 @@ const Register: React.FC = () => {
                     />
                     <button
                         type="submit"
-                        className="bg-accent hover:bg-indigo-600 px-6 py-3 rounded-lg transition-colors"
+                        className="bg-accent hover:bg-indigo-600 px-6 py-3 rounded-lg transition-colors "
                     >
                         Register
                     </button>
                 </form>
-                <p className="mt-4 text-gray-400">
+                <p className="mt-6 text-gray-400 text-center ">
                     Already have an account? <Link to="/login" className="text-accent underline">Login</Link>
                 </p>
             </div>
